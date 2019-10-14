@@ -2,7 +2,13 @@
   "name": "monsters-rolodex",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://multibdoyle.github.io/monsters-rolodex_2",
   "dependencies": {
+    "deployment": "^0.2.3",
+    "g": "^2.0.1",
+    "gh-pages": "^2.1.1",
+    "h": "^1.0.0",
+    "packages": "0.0.8",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
@@ -11,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
